@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="icon" href="favicon.png">
+
+    <!-- lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Lato', sans-serif;
+            
+        }
+
+        .outer-box{
+            width: 100vw;
+            height: 100vh;
+            background:linear-gradient(to top left,rgb(4, 4, 187)
+            ,#a8f5ff);
+
+        }
+
+        .inner-box{
+            width: 400px;
+            margin:0 auto;
+            position: relative;
+            top: 50%;
+            transform:translateY(-50%) ;
+            padding:20px 40px;
+            /* background-color: #ffffff09; */
+            background: linear-gradient(to top left,rgba(255, 255, 255, 0.523),#ffffff33);
+            backdrop-filter:blur(13px);
+            border-radius: 15px;
+            box-shadow: 4px 4px 5px rgb(0, 0, 32);
+            z-index: 1;
+
+        }
+
+        .sign-upheader h1{
+            font-size: 2rem;
+           color: #212121;
+            
+        }
+
+        .sign-upheader p{
+               font-size: 0.9rem;
+               color:#555;
+        }
+
+
+        .sign-upbody {
+            margin: 20px 0;
+        }
+
+        .sign-upbody p{
+            margin:20px  0;
+        }
+         
+        .sign-upbody p label{
+            display: block;
+            font-weight: bold;
+        }
+        
+
+        .sign-upbody p input{
+            width: 100%;
+            padding:10px;
+            border:2px solid #cccc;
+            border-radius: 10px;
+            font-size: 1rem;
+            
+        }
+
+        #sub{
+            background-color: #3498db;
+            border: none;
+            color: #fff;
+            cursor:pointer ;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+       
+        #sub:hover{
+            background-color:darkblue;
+
+        }
+
+        .signupfooter{
+            color:#555;
+            text-align: center;
+        }
+       
+        .circle{
+            width:200px;
+            height:200px;
+          
+            border-radius: 100px;
+            background:linear-gradient(to top right,#ffffff33,#ffffffff);
+            position: absolute;
+
+        }
+
+      
+        
+
+        .c1{
+            top:5%;
+            left:30%;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .c1:hover{
+            box-shadow:4px 4px 5px rgb(1, 1, 63);
+            transform:translateX(-100px);
+        }
+        .c2{
+            bottom:5%;
+            right:30%;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .c2:hover{
+            box-shadow: 4px 4px 5px  rgb(1, 1, 63);
+            transform:translateX(100px);
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+     <div class="outer-box">
+        <div class="inner-box">
+            <header class="sign-upheader">
+                <h1>Sign-up</h1>
+                <p>It just takes 30 seconds</p>
+            </header>
+
+            <main class="sign-upbody">
+                <form action="#">
+                    <p>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="e.g John" required>
+                    </p>
+                    
+
+                    <p>
+                        <h3>Standard</h3>
+                        <label for="1st">1st year</label>
+                        <input type="radio" id="1st" name="std" required>
+                        <br><br>
+                        <label for="2nd">2nd year</label>
+                        <input type="radio" id="2nd" name="std" required>
+                        <br><br>
+                        <label for="3rd">3rd year</label>
+                        <input type="radio" id="3rd" name="std" required>
+                        <br><br>
+                        <label for="4th">4th year</label>
+                        <input type="radio" id="4th" name="std" required>
+                        <br><br>
+                    </p>
+               
+
+                    <p>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="e.g john65@outlook.com" required >
+                    </p>
+                 
+                    <p>
+                        <label for="pasword">New Password</label>
+                        <input type="password" id="pasword" placeholder="atleast 8 characters" required>
+                    </p>
+
+
+                    <p>
+                        <input type="submit" id="sub" value="Create Account">
+                    </p>
+                    
+                   
+                </form>
+            </main>
+
+
+
+            <footer class="signupfooter">
+                <p>Already have an account?<a href="signin.htm">sign-in</a></p>
+            </footer>
+
+
+
+
+        </div>
+
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+     </div>
+
+
+
+
+    
+</body>
+</html>

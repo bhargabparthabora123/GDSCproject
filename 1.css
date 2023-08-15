@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    background-color:#e7ecef;
+}
+
+/* navbar */
+
+.navbar{
+    background-color:#1b4965;
+    width: 100vw;
+    height:10vh;
+    padding: 15px 25px;    
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    
+    
+
+}
+
+.navdiv{
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.logo a {
+    font-size: 40px;
+    color:#bee9e8 ;
+    
+}
+
+
+li{
+    list-style: none;
+    display: inline-block;
+    
+    
+
+}
+
+
+li a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right:25px;
+}
+
+.nav{
+    padding:8px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1) ;    
+    
+}
+
+.nav:hover{
+    background-color:#276083;
+ 
+    
+}
+
+
+
+.signin,.signup{
+   border: .1px solid white;    
+    padding: 10px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.signup{
+    background-color: #fff;
+    color: #1b4965;
+}
+
+.signin:hover,.signup:hover{
+       background-color: lightskyblue;
+       color: white;
+}
+
+/* hero section */
+.hero{
+    /*  border: 1px solid red; */
+ 
+    margin-top: 150px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    border-radius:1rem;
+    border: 1px solid darkgrey;
+
+    
+}
+
+.herohead{
+       font-size: 30px;
+       font-weight: bold;
+       margin: 20px;
+       height:80px;
+       /* border:1px solid green; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.typing{
+    /* border-right: .15rem solid white; */
+    width:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: typing 10s 1 forwards;
+}
+
+
+@keyframes typing{
+    0%{
+        width:0;
+    }
+    100%{
+        width:50%;
+    }
+}
+
+
+.heroimage1{
+    /* border:1px solid red; */
+    width:900px;
+    height:400px;
+    background-color:#222;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./360_F_219669327_v12pBKc7TB62E3uCJrgRRkDhfVENK3z5.jpg);
+    background-blend-mode:hard-light;
+    background-position: top;
+    transition-property: all;
+    transition-duration: 2.5s;
+    transition-timing-function:cubic-bezier(0.67, -0.04, 0.19, 1.02);
+
+
+}
+
+.heroimage1:hover{
+             background-color:#999;
+             width:80vw;
+             background-position: center;
+             
+}
+
+
+.heroimage{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    
+    
+
+}
+
+.herobody{
+    /* border:1px solid violet; */
+    text-align: center;
+    text-align-last:center ;
+    margin: 20px;
+    font-weight:800;
+    padding-bottom: 30px;
+    
+}
+
+
+#over:link{
+    color:hotpink;
+}
+
+#over:visited{
+    color:green;
+}
+
+
+
+#over:hover{
+       color: red;
+}
+.over1:link{
+    color: hotpink;
+}
+.over1:hover{
+    color:red;
+}
+.over1:visited{
+    color:rgb(1, 1, 39)
+}
+
+#parent{
+    border: 1px solid darkgrey;
+    width: 90vw;
+    height: 90vw;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    border-radius: 2em;
+    background-color: #fff;
+    box-shadow: 7px 7px 8px darkgrey;
+    /* row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-content: center; */
+
+
+  
+   
+    
+ 
+    
+    
+    
+}
+
+.box{
+    border:1px solid darkblue;
+    width: 60%;
+    height: 60%;
+    
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color:#0077b6;
+    color: white;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.box1{
+    box-shadow: -7px -7px 4px darkgrey;
+}
+.box2{
+    box-shadow: 7px -7px 4px darkgrey;
+}
+.box3{
+    box-shadow: -7px 7px 4px darkgrey;
+}
+.box4{
+    box-shadow: 7px 7px 4px darkgrey;
+}
+
+.box:hover{
+    background-color:#96ccec;
+    color:#03045e;
+    transform: skew(0deg,5deg);
+
+
+}
+

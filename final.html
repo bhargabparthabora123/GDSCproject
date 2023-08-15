@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for 1st year 1</title>
+    <link rel="icon" href="favicon.png">
+ <!-- lato -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        --primary-color:#03045e;
+        --secondary-color:#023e8a;
+        --tertiary-color:#0077b6;
+        --color1:#0096c7;
+        --color2:#00b4d8;
+        --color3:#48cae4;
+        --color4:#90e0ef;
+        --color5:#ade8f4;
+        --color6:#caf0f8;
+        --color7: #212121;
+    }
+
+    
+        body{
+        font-family: 'Lato', sans-serif;
+    }
+        .outside{
+            width: 100vw;
+            height: 100vh;
+            background:linear-gradient(to top right,var(--primary-color),var(--secondary-color),var(--color2),var(--color6));
+        }
+
+        .inner{
+            width:400px ;
+             border-radius: 20px;
+       
+             margin: 0 auto;
+             position: relative;
+             top:50%;
+             transform:translateY(-50%);
+             padding: 9px 30px;
+             background: linear-gradient(to top left,rgba(255, 255, 255, 0.416),#ffffff33);
+             box-shadow: 7px 7px 5px rgb(2, 2, 43);
+             backdrop-filter: blur(17px);
+             
+        }
+        .head h2{
+            font-size:2rem;
+            color: var(--color7);
+
+        }
+        .head p{
+            font-size: 0.9rem;
+            color:#555 ;
+        }
+
+        .main{
+            margin:18px 0;
+        }
+        .main p{
+            margin: 20px 0;   
+        }
+
+        .main p label{
+            display: block;
+             font-weight: bold;
+        }
+
+        .main p input{
+            width: 100%;
+         padding: 9px;
+         border:2px solid #cccc;
+         border-radius: 10px;
+            font-size: 1rem;
+        }
+         
+        #sub{
+            border: 0px ;
+            background-color:#3498db;
+            color: #ffffff;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+        #sub:hover{
+            background-color: #00008b;
+
+        }
+
+
+    </style>
+
+
+    
+</head>
+<body>
+    
+    <div class="outside">
+        <div class="inner">
+            <header class="head">
+                <h2>Enter Details</h2>
+                <p>data once provided cannot be changed later</p>
+            </header>
+
+            <main class="main">
+                  <form action="">
+
+                    <p>  <label for="pref">Preferred Hostel:</label>
+                         <select name="hostelpreferred" id="pref" style="width: 100%;padding: 9px;border: 2px solid #cccc;border-radius: 10px;font-size: 1rem;">
+                            <option value="BH1">BH1</option>
+                            <option value="BH2">BH2</option>
+                            <option value="BH3">BH3</option>
+                            <option value="BH4">BH4</option>
+                            <option value="BH5">BH5</option>
+                            <option value="BH6">BH6</option>
+                            <option value="BH7">BH7</option>
+                            <option value="BH8">BH8</option>
+                            <option value="BH9">BH9</option>
+                            <option value="PGH">PGH</option>
+                            <option value="GH1">GH1</option>
+                            <option value="GH2">GH2</option>
+                            <option value="GH3">GH3</option>
+                         </select>
+                         <p class="imp"><h6 style="color: #555 ;">BH-Boy's Hostel; GH-Girl's Hostel</h6></p>
+                    </p>
+
+                    <p>
+                        <label for="str">Preferred room type:</label>
+                        <select name="seater" id="str" style="width: 100%;padding: 9px;border: 2px solid #cccc;border-radius: 10px;font-size: 1rem;">
+                            <option value="1 seater">single str</option>
+                            <option value="2 seater">double str</option>
+                            <option value="3 seater">triple str</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <input type="submit" id="sub" >
+                    </p>
+
+                  </form>
+            </main>
+
+
+        </div>
+    </div>
+</body>
+</html>
